@@ -1,0 +1,25 @@
+@import '../../styles/lib/antd.min.css';
+
+.ant-upload {
+	margin: auto;
+	width: 40vw;
+	padding: 15px 0;
+}
+
+.ant-upload-text {
+	font-size: 20px !important;
+}
+
+.ant-upload-hint {
+	font-size: 18px !important;
+}
+
+.ant-upload-list-item-name {
+	font-size: 20px;
+}
+
+.choice_hint {
+	margin: 5px 10px;
+	color: red;
+	font-size: 18px;
+}

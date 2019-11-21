@@ -1,51 +1,72 @@
-# Drone Challenge
+# Step By Step Build Guide
 
+This is an step by step guide for Mac OS users to setting up this project.
 
-## Part 1
+### Step 1： Install Node and npm
 
-Blue Flag has an aerial drone which it uses to take photographs of billboards. Instructions are sent to the drone in a simple language that tells the drone which direction to move and when to take a photo. Moves are always exactly 1 km to the north (^), south (v), east (>) or west (<) or take a photograph (x).
+This guide highly recommends you install Homebrew for install other packages like Node.js and MongoDB, to install Homebrew, please open your terminal then run:
 
-Unfortunately the instruction processor is not perfect yet so the drone may photograph the same billboard multiple times.
-
-_How many billboards are photographed at least once?_
-
-For example:
-- `x^xv` takes photos of 2 billboards and ends up back at the starting location
-- `x^^x>>xvvx<<x` takes photos of 4 billboards, including 2 photos of the same billboard at the starting location
-
-## Part 2
-Using the same input as Part 1 - Blue Flag acquires a second drone to help speed up the process of photographing billboards. The drones both take off from the same location and then take turns moving based on the same instructions.
-
-_How many billboards are photographed at least once?_
-
-For example:
-- `x^xv` takes 2 photos of the same billboard, because the 1st drone stays in place and takes 2 photos and the 2nd drone moves 1 km north and then 1 km south to end up in the starting location
-- `x^^x>>xvvx<<x` takes photos of 4 different billboards and both drones still end up back at the starting location
-
-
-## Requirements
-Fork and extend this project to answer the questions in part 1 & 2.
-The project consists of an express route in `api.js` and a react client in `client.js`.
-
-1. Fork the code to your own github account.
-2. Use `src/api.js` to build an api that can process drone instructions and return an answer.
-3. Use `src/client.js` to build a front end that can send instructions to the api and render the response.
-4. Create a pull request to submit your code.
-5. We will use sample-input.txt to validate your api.
-
-* If you are a back-end developer we will mostly look at your work in `api.js`
-* If you are a front-end developer we will assess the UI built in `client.js`
-
-
-## Getting Started
-
-```sh
-# install dependencies
-yarn install
-
-# Run the api and client
-yarn watch
-
-# open the app
-open http://localhost:4000
 ```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+you can run below to check did you install Homebrew successfully
+
+```
+brew update
+```
+
+After instal Homebrew successfully, you can install Node.js now, please run
+
+```
+brew install node
+```
+
+then please run
+
+```
+brew install npm
+```
+
+After that ,you can run
+
+```
+node -v
+```
+
+and
+
+```
+npm -v
+```
+
+to check your node and npm version, which also means you installed them successfully.
+
+# Step 2： Build the project at localhost
+
+Download and unzip this project then change your terminal direcotry to the project.
+
+Then install the necessary dependencies of this project
+
+```
+npm install
+```
+
+at the project root directory, this may takes a few mins.
+
+then you can run the project in the localhost
+
+```
+npm start
+```
+
+Normally, everything will be good, and you may see below information at your terminal:
+
+```
+------------------------------------------------
+[watch-client] Local:             http://localhost:4000
+[watch-client] On Your Network:   http://192.168.0.201:4000
+------------------------------------------------
+```
+
+then you can go to Chrome and type `localhost:4000` to view the project.

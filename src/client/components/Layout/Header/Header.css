@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Zombie Guts';
+  src: url('../../../assets/fonts/Zombie_Guts.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+
+.header {
+  padding: 20px 0;
+  text-align: center;
+  background: black;
+}
+.heading {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Zombie Guts', 'Yeon Sung', cursive;
+}
